@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail produktu | E-shop s nábytkem</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_detail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css">
 </head>
 
 <body>
-
-    <!-- ====== HEADER ====== -->
     <header class="header">
         <div class="header__inner">
             <a href="index.html" class="header__logo">
@@ -33,7 +33,29 @@
     </header>
 
     <main>
-        
+        <section class="product-detail">
+            <div class="product-detail__layout">
+                <div class="gallery" id="gallery">
+                    <figure class="gallery__main">
+                        <img src="images/zidle.png" alt="Židle" class="gallery__main-image">
+                    </figure>
+                    <div class="gallery__thumbnails">
+                        <figure class="gallery__thumbnail">
+                            <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                        </figure>
+                        <figure class="gallery__thumbnail">
+                            <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                        </figure>
+                        <figure class="gallery__thumbnail">
+                            <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                        </figure>
+                        <figure class="gallery__thumbnail">
+                            <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ====== FOOTER ====== -->
@@ -72,6 +94,16 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/lightgallery.umd.min.js"></script>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+
+        lightGallery(gallery, {
+            speed: 500,
+            selector: 'img'
+        });
+    </script>
 
 </body>
 
