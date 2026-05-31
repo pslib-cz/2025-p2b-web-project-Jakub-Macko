@@ -10,6 +10,8 @@
   --color-border-hover: #004a8c;
 
   --font: 'Noto Sans', 'Arial', sans-serif;
+
+  --page-width: 1400px;
 }
 
 *,
@@ -40,7 +42,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -60,7 +62,7 @@ img {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  max-width: 1200px;
+  max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -131,7 +133,7 @@ img {
 
 .products__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -237,14 +239,6 @@ img {
   padding: 1rem;
   border: 1px solid #c8c8c8;
   border-radius: 4px;
-}
-
-.footer__brand-description {
-  color: var(--color-text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.7;
-  margin-top: 1rem;
-  max-width: 280px;
 }
 
 .footer__title {
