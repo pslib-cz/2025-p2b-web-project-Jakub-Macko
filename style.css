@@ -1,13 +1,13 @@
 :root {
   --color-bg-primary: #f5f5f5;
-  --color-bg-secondary: #ffffff;
+  --color-bg-secondary: #f0f0f0;
   --color-bg-card: #ffffff;
   --color-accent: #0058a3;
   --color-accent-hover: #004a8c;
   --color-text-primary: #111111;
   --color-text-secondary: #484848;
   --color-border: #e0e0e0;
-  --color-border-hover: #0058a3;
+  --color-border-hover: #004a8c;
 
   --font: 'Noto Sans', 'Arial', sans-serif;
 }
@@ -221,16 +221,22 @@ img {
 
 /* ============================================ FOOTER ============================================ */
 .footer {
-  background: var(--color-bg-secondary);
+  background: linear-gradient(to bottom, var(--color-bg-secondary), #dcdcdc);
   border-top: 1px solid var(--color-border);
   padding: 4rem 0 0;
 }
 
 .footer__content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   padding-bottom: 3rem;
+}
+
+.footer__section {
+  padding: 1rem;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
 }
 
 .footer__brand-description {
@@ -256,6 +262,7 @@ img {
 }
 
 .footer__link {
+  cursor: pointer;
   font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
