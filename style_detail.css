@@ -25,6 +25,7 @@
   border-radius: 6px;
   overflow: hidden;
   border: 2px solid var(--color-border);
+  cursor: pointer;
 }
 
 .gallery__main-image {
@@ -35,7 +36,7 @@
 
 .gallery__main:hover .gallery__main-image {
   transition: all 0.2s ease;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .gallery__thumbnails {
@@ -48,7 +49,7 @@
   aspect-ratio: 1;
   border-radius: 6px;
   overflow: hidden;
-  border: 2px solid transparent;
+  border: 2px solid var(--color-border);
   cursor: pointer;
   transition: all 0.2s ease;
   opacity: 0.7;
@@ -64,3 +65,111 @@
   object-fit: cover;
 }
 
+/* ============================================ DETAIL-INFO ============================================ */
+.detail-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.detail-info__name {
+  grid-column: 1 / -1;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.detail-info__price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.detail-info__price-currency {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.detail-info__rating {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-info__stars {
+  display: flex;
+  gap: 2px;
+  color: var(--color-star);
+  font-size: 1.25rem;
+}
+
+.detail-info__rating-text {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.detail-info__variants {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-info__variants-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  letter-spacing: 1px;
+}
+
+.detail-info__variants-list {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.detail-info__variant {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+}
+
+.detail-info__variant:hover {
+  transform: scale(1.1);
+}
+
+.detail-info__variant--active {
+  border-color: var(--color-text-primary);
+}
+
+.detail-info__description {
+  grid-column: 1 / -1;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail-info__button {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.detail-info__button:hover {
+  background: var(--color-accent-hover);
+}
