@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail produktu | E-shop s nábytkem</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_detail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/css/lightgallery-bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                LOGO
+            </a>
+            <nav class="header__nav" id="header-nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">Domů</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">O nás</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="product-detail">
+                <div class="product-detail__layout">
+                    <div class="gallery" id="gallery">
+                        <figure class="gallery__main">
+                            <img src="images/zidle.png" alt="Židle" class="gallery__main-image">
+                        </figure>
+                        <div class="gallery__thumbnails">
+                            <figure class="gallery__thumbnail">
+                                <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                            </figure>
+                            <figure class="gallery__thumbnail">
+                                <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                            </figure>
+                            <figure class="gallery__thumbnail">
+                                <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                            </figure>
+                            <figure class="gallery__thumbnail">
+                                <img src="images/zidle.png" alt="Židle" class="gallery__thumbnail-image">
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-info">
+                        <h1 class="detail-info__name" id="detail-name">
+                                Židle
+                            </h1>
+                            <div class="detail-info__rating">
+                                <span class="detail-info__stars" id="detail-stars">★★★★★</span>
+                                <span class="detail-info__rating-text" id="detail-rating-text">4.8 / 5 (58
+                                    hodnocení)</span>
+                            </div>
+                            <span class="detail-info__price" id="detail-price">
+                                240 990<span class="detail-info__price-currency"> Kč</span>
+                            </span>
+                            <div class="detail-info__variants">
+                                    <span class="detail-info__variants-label">BARVA / VARIANTA</span>
+                                    <div class="detail-info__variants-list" id="detail-variants">
+                                    <button class="detail-info__variant detail-info__variant--active"
+                                        style="background-color: #4a5568;" title="Šedá" type="button"
+                                        aria-label="Varianta: Šedá"></button>
+                                    <button class="detail-info__variant" style="background-color: #c53030;"
+                                        title="Červená" type="button" aria-label="Varianta: Červená"></button>
+                                    <button class="detail-info__variant" style="background-color: #2b6cb0;"
+                                        title="Modrá" type="button" aria-label="Varianta: Modrá"></button>
+                                    <button class="detail-info__variant" style="background-color: #d4a574;"
+                                        title="Béžová" type="button" aria-label="Varianta: Béžová"></button>
+                                </div>
+                            </div>
+
+                            <p class="detail-info__description" id="detail-description">
+                                Jednoduchá dřevěná židle z masivu vhodná do kuchyně, jídelny nebo na chalupu. Pevná konstrukce zajišťuje stabilitu při běžném používání. 
+                                Díky svému univerzálnímu vzhledu se snadno kombinuje s různými typy stolů. Nenáročná na údržbu, vhodná pro každodenní použití.
+                            </p>
+                            <button class="detail-info__button" id="detail-cart-btn" type="button">
+                                🛒 Přidat do košíku
+                            </button>
+                        </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Navigace</h3>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Domů</a></li>
+                        <li><a href="index.html" class="footer__link">Detail produktu</a></li>
+                        <li><a href="kontakt.html" class="footer__link">O nás</a></li>
+                        <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Kamenné prodejny</h3>
+                    <ul class="footer__list">
+                        <li><span class="footer__link">Liberec</span></li>
+                        <li><span class="footer__link">Praha</span></li>
+                        <li><span class="footer__link">Ostrava</span></li>
+                        <li><span class="footer__link">Ústí nad Labem</span></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Kontakt</h3>
+                    <ul class="footer__list">
+                        <li><span class="footer__link">ABC 42, Liberec, Česká republika</span></li>
+                        <li><span class="footer__link">+420 123 456 789</span></li>
+                        <li><span class="footer__link">info@nabytek.cz</span></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Právní informace</h3>
+                    <ul class="footer__list">
+                        <li><span class="footer__link">Všeobecné obchodní podmínky</span></li>
+                        <li><span class="footer__link">Ochrana osobních údajů</span></li>
+                        <li><span class="footer__link">Cookies</span></li>
+                        <li><span class="footer__link">Nahlásit nebezpečný výrobek</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>E-shop s nábytkem...</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.9.0/lightgallery.umd.min.js"></script>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+
+        lightGallery(gallery, {
+            speed: 500,
+            selector: 'img'
+        });
+    </script>
+
+</body>
+
+</html>
